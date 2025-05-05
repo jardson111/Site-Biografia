@@ -1,0 +1,196 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.cabecalho p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Biografia */
+.biografia {
+    padding: 2rem 0;
+}
+
+.foto-biografia {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.texto-biografia h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* Linha do Tempo */
+.linha-do-tempo {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+
+.linha-do-tempo h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.eventos {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eventos::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #3498db;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.evento {
+    padding: 1rem 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.evento .data {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.evento .descricao {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+/* Curiosidades */
+.curiosidades {
+    padding: 2rem 0;
+}
+
+.curiosidades h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.cards-curiosidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #3498db;
+    margin-top: 0;
+}
+
+/* Autores */
+.autores {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.autores h2 {
+    color: #2c3e50;
+}
+
+.autores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.autores li {
+    margin: 0.5rem 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .eventos::before {
+        left: 30px;
+    }
+    
+    .evento {
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+    
+    .evento .data {
+        position: absolute;
+        left: 0;
+        width: 60px;
+    }
+    
+    .cards-curiosidades {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        max-width: 100%;
+    }
+}
