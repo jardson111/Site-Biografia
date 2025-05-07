@@ -85,8 +85,8 @@ body {
 }
 
 .evento .data {
-    background-color: #3498db;
-    color: white;
+    background-color: #040607;
+    color: rgb(63, 78, 74);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-weight: bold;
@@ -97,9 +97,9 @@ body {
 
 .evento .descricao {
     padding: 1rem;
-    background-color: white;
+    background-color: rgb(10, 9, 9);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(61, 53, 53, 0.1);
     margin-top: 1rem;
 }
 
